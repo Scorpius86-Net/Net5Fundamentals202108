@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Net5.Fundamentals.TypeAndOperators.Tests;
 
 namespace Net5.Fundamentals.TypeAndOperators
@@ -102,13 +103,57 @@ namespace Net5.Fundamentals.TypeAndOperators
             int numConv = Convert.ToInt32("1234");
             Console.WriteLine(numConv);
 
-            int i = 3;
+            int i = 3;            
             Console.WriteLine($"i = {i}");
             Console.WriteLine($"++i = {++i}");
+            Console.WriteLine($"i++ = {i++}");
             Console.WriteLine($"i = {i}");
 
+            //False
+            if(test && eval.Value){}
+
+            //False
+            if (test & eval.Value){}
+
+            //True
+            if (test || eval.Value) { }
+
+            //True
+            if (test | eval.Value) { }
 
 
+            if (test)
+            {
+                a = 5;
+            }
+            else
+            {
+                a = 6;
+            }
+            a = (test ? 5 : 6);
+            a = (test ? 5 : (eval.Value ? 4 : 2));
+
+            num = (num == null ? 5 : num);
+            num = num ?? 5;
+
+            string cadNum = num?.ToString();
+
+            List<int> nums = new List<int> { 1, 2, 3, 4, 5, 6 };
+
+            nums.ForEach(numItem => {
+                Console.WriteLine(numItem);
+                Console.WriteLine(numItem);
+                Console.WriteLine(numItem);
+            });
+            
+            
+            
+            
+            
+            static void printLine (int n)            
+            {
+                Console.WriteLine(n);
+            }
             static void ChangeMyClass(MyClass param)
             {
                 param.MyProperty = 20;
