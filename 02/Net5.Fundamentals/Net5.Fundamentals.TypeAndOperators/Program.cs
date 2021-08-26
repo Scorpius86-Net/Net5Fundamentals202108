@@ -59,6 +59,34 @@ namespace Net5.Fundamentals.TypeAndOperators
                 //Other ToDo
             }
 
+            Coords coords01 = new Coords
+            {
+                X = 1,
+                Y = 2,
+                Z=3
+            };
+            Coords coords02 = new Coords(1, 2, 3);
+            //coords01.X = 3;
+
+            (MyClass,string name,int, int, int, int, int) t1 = (new MyClass(),"tr",5, 4, 4, 4, 4);
+            Console.WriteLine(t1.name);
+
+            bool? eval = null;
+            int? num = null;
+            int numNotNull = 0;
+            string cad = null;
+            MyClass myClass1 = null;
+            
+            if (num.HasValue)
+            {
+                int sum = numNotNull + num.Value;
+            }
+
+            //int numVar = 15; Explicitly
+            var numVar = 15; //Implicitly
+            //string stringVar = "45";
+            var stringVar = "45";
+
 
 
 
