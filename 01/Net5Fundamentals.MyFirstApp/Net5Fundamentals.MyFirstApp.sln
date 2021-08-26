@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31410.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net5Fundamentals.MyFirstApp.Win", "Net5Fundamentals.MyFirstApp.Win\Net5Fundamentals.MyFirstApp.Win.csproj", "{22F31A93-8078-49BA-9577-22AAA1B64C1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net5Fundamentals.MyFirstApp.Api", "Net5Fundamentals.MyFirstApp.Api\Net5Fundamentals.MyFirstApp.Api.csproj", "{EBD12378-3345-4521-8524-C35BA3928CC1}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Net5Fundamentals.MyFirstApp.Py", "Net5Fundamentals.MyFirstApp.Py\Net5Fundamentals.MyFirstApp.Py.pyproj", "{B311A960-7B09-4FD2-BC80-7AD5B1E50C22}"
+EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Net5Fundamentals.MyFirstApp.NodeJs", "Net5Fundamentals.MyFirstApp.NodeJs\Net5Fundamentals.MyFirstApp.NodeJs.njsproj", "{A8A412EF-F512-4CEF-87DE-EBF6D7AD3E79}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Net5Fundamentals.MyFirstApp.LambdaAWS", "Net5Fundamentals.MyFirstApp.LambdaAWS\Net5Fundamentals.MyFirstApp.LambdaAWS.csproj", "{7D8CF691-3CA6-4349-9228-D7E8390222D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net5Fundamentals.MyFirstApp.MVC", "Net5Fundamentals.MyFirstApp.MVC\Net5Fundamentals.MyFirstApp.MVC.csproj", "{9A57400A-2697-4472-8598-FC2B88223862}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Items", "Items", "{AAF44C42-558F-4997-82E3-7F7BE0CA1825}"
+	ProjectSection(SolutionItems) = preProject
+		Documentacion.txt = Documentacion.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Folder01", "Folder01", "{B53E6123-3424-4227-A08F-00F3BDFF26F7}"
+	ProjectSection(SolutionItems) = preProject
+		Document.html = Document.html
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22F31A93-8078-49BA-9577-22AAA1B64C1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22F31A93-8078-49BA-9577-22AAA1B64C1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22F31A93-8078-49BA-9577-22AAA1B64C1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22F31A93-8078-49BA-9577-22AAA1B64C1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBD12378-3345-4521-8524-C35BA3928CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBD12378-3345-4521-8524-C35BA3928CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBD12378-3345-4521-8524-C35BA3928CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBD12378-3345-4521-8524-C35BA3928CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B311A960-7B09-4FD2-BC80-7AD5B1E50C22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B311A960-7B09-4FD2-BC80-7AD5B1E50C22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B311A960-7B09-4FD2-BC80-7AD5B1E50C22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B311A960-7B09-4FD2-BC80-7AD5B1E50C22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8A412EF-F512-4CEF-87DE-EBF6D7AD3E79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8A412EF-F512-4CEF-87DE-EBF6D7AD3E79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8A412EF-F512-4CEF-87DE-EBF6D7AD3E79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8A412EF-F512-4CEF-87DE-EBF6D7AD3E79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D8CF691-3CA6-4349-9228-D7E8390222D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D8CF691-3CA6-4349-9228-D7E8390222D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D8CF691-3CA6-4349-9228-D7E8390222D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D8CF691-3CA6-4349-9228-D7E8390222D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A57400A-2697-4472-8598-FC2B88223862}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A57400A-2697-4472-8598-FC2B88223862}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A57400A-2697-4472-8598-FC2B88223862}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A57400A-2697-4472-8598-FC2B88223862}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B53E6123-3424-4227-A08F-00F3BDFF26F7} = {AAF44C42-558F-4997-82E3-7F7BE0CA1825}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0506C36F-01C7-4963-9B8F-3303F3C8573F}
+	EndGlobalSection
+EndGlobal
