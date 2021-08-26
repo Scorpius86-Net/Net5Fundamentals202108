@@ -87,6 +87,25 @@ namespace Net5.Fundamentals.TypeAndOperators
             //string stringVar = "45";
             var stringVar = "45";
 
+            Dog dog = new Dog("Firulais", "5");
+            Console.WriteLine(dog.ToString());
+
+            int numInt = 1234563865;
+            long bigNumt = numInt;
+            Derived derived = new Derived();
+            Base baseClass = derived;
+
+            Giraffe g = new Giraffe();
+            Animal animal = g;
+            Giraffe g2 = (Giraffe)animal;
+
+            int numConv = Convert.ToInt32("1234");
+            Console.WriteLine(numConv);
+
+            int i = 3;
+            Console.WriteLine($"i = {i}");
+            Console.WriteLine($"++i = {++i}");
+            Console.WriteLine($"i = {i}");
 
 
 
