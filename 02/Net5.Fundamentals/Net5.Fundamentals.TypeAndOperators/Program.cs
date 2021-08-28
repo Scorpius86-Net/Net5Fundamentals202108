@@ -145,7 +145,14 @@ namespace Net5.Fundamentals.TypeAndOperators
                 Console.WriteLine(numItem);
                 Console.WriteLine(numItem);
             });
-            
+
+            Employee employee = new Employee()
+            {
+                Name = "Antonio"
+            };
+
+            //employee.Name = "Oscar";
+            employee.Eat();
             
             
             

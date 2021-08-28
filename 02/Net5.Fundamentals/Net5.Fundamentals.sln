@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31410.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net5.Fundamentals.TypeAndOperators", "Net5.Fundamentals.TypeAndOperators\Net5.Fundamentals.TypeAndOperators.csproj", "{A17743FD-EDDF-40DC-8A10-36EE94F7599F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Net5.Fundamentals.TypeAndOperators", "Net5.Fundamentals.TypeAndOperators\Net5.Fundamentals.TypeAndOperators.csproj", "{A17743FD-EDDF-40DC-8A10-36EE94F7599F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Net5.Fundamentals.HighLevel", "Net5.Fundamentals.HighLevel\Net5.Fundamentals.HighLevel.csproj", "{ED30C4C3-ABB4-47BD-A75A-A09F2B841616}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A17743FD-EDDF-40DC-8A10-36EE94F7599F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A17743FD-EDDF-40DC-8A10-36EE94F7599F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A17743FD-EDDF-40DC-8A10-36EE94F7599F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED30C4C3-ABB4-47BD-A75A-A09F2B841616}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED30C4C3-ABB4-47BD-A75A-A09F2B841616}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED30C4C3-ABB4-47BD-A75A-A09F2B841616}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED30C4C3-ABB4-47BD-A75A-A09F2B841616}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
