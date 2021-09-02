@@ -12,5 +12,6 @@ namespace Net5.Fundamentals.ListAndThread
         public string Name { get; set; }
         public int Age { get; set; }
         public string Sex { get; set; }
+
     }
 }
