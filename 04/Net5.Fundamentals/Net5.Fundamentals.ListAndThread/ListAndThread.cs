@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -158,7 +159,7 @@ namespace Net5.Fundamentals.ListAndThread
 
             people.Select(people => people.Key).ToList().ForEach(k => Console.WriteLine($"Key : {k}"));
         }
-        public void HashTabeSample()
+        public void HashTableSample()
         {
             Console.WriteLine("HashTable");
             Console.WriteLine("=========");
@@ -170,7 +171,52 @@ namespace Net5.Fundamentals.ListAndThread
             people.Add("41635163", new Person { DNI = "41635163", Name = "Azucena", Age = 22, Sex = "F" });
             people.Add("88382238", new Person { DNI = "88382238", Name = "Jeniffer", Age = 21, Sex = "F" });
 
-            
+            Hashtable ht = new Hashtable(people);
+
+            Console.WriteLine($"Key hash : 56428632 , Nombre : {((Person)ht["56428632"]).Name}");
+        }
+
+        public void StackSample()
+        {
+            Console.WriteLine("Stack (LIFO)");
+            Console.WriteLine("============");
+
+            Stack<Person> people = new Stack<Person>();
+
+            people.Push(new Person { DNI = "12345678", Name = "Erick", Age = 38, Sex = "M" });
+            people.Push(new Person { DNI = "56428632", Name = "Jorge", Age = 30, Sex = "M" });
+            people.Push(new Person { DNI = "41635163", Name = "Azucena", Age = 22, Sex = "F" });
+            people.Push(new Person { DNI = "88382238", Name = "Jeniffer", Age = 21, Sex = "F" });
+
+            int count = people.Count;
+
+            for (int i = 0; i < count; i++)
+            {
+                Console.WriteLine($"Elementos en el Stack : {people.Count}");
+                Console.WriteLine($"Extraer el elemento del Stack : {people.Peek().Name}");
+                Console.WriteLine($"Eliminar el elemento del Stack : {people.Pop()}");
+            }
+        }
+        public void QueueSample()
+        {
+            Console.WriteLine("Queue (FIFO)");
+            Console.WriteLine("============");
+
+            Queue<Person> people = new Queue<Person>();
+
+            people.Enqueue(new Person { DNI = "12345678", Name = "Erick", Age = 38, Sex = "M" });
+            people.Enqueue(new Person { DNI = "56428632", Name = "Jorge", Age = 30, Sex = "M" });
+            people.Enqueue(new Person { DNI = "41635163", Name = "Azucena", Age = 22, Sex = "F" });
+            people.Enqueue(new Person { DNI = "88382238", Name = "Jeniffer", Age = 21, Sex = "F" });
+
+            int count = people.Count;
+
+            for (int i = 0; i < count; i++)
+            {
+                Console.WriteLine($"Elementos en el Queue : {people.Count}");
+                Console.WriteLine($"Extraer el elemento del Queue : {people.Peek().Name}");
+                Console.WriteLine($"Eliminar el elemento del Queue : {people.Dequeue()}");
+            }
         }
     }
 }
