@@ -116,6 +116,27 @@ namespace Net5.Fundamentals.ListAndThread
                 new Person{Name = "Azucena",Age=22,Sex="F"},
                 new Person{Name = "Jeniffer",Age=21,Sex="F"}
             };
+
+            Console.WriteLine("");
+            Console.WriteLine("Mujeres del salon de clase");
+            people.Where(person => person.Sex == "F").ToList().ForEach(p => Console.WriteLine(p.Name));
+            Console.WriteLine($"La suma de las edades es : {people.Sum(p => p.Age)}");
+        }
+
+        public void DictionarySample()
+        {
+            Console.WriteLine("Dictionary");
+            Console.WriteLine("==========");
+
+            Dictionary<string, Person> people = new Dictionary<string, Person>();
+
+            people.Add("12345678", new Person { DNI = "12345678", Name = "Erick", Age = 38, Sex = "M" });
+            people.Add("56428632", new Person { DNI = "56428632", Name = "Jorge", Age = 30, Sex = "M" });
+            people.Add("41635163", new Person { DNI = "41635163", Name = "Azucena", Age = 22, Sex = "F" });
+            people.Add("88382238", new Person { DNI = "88382238", Name = "Jeniffer", Age = 21, Sex = "F" });
+
+            Console.WriteLine($"Azucena : {people.Where(kvp => kvp.Value.Name == "Azucena").Select(s => s.Key).First()} ");
+            Console.WriteLine($"Key : 56428632, value {people["56428632"].Name}");
         }
     }
 }

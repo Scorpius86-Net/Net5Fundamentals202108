@@ -17,6 +17,7 @@ namespace Net5.Fundamentals.ListAndThread
                 Console.WriteLine("===============");
                 Console.WriteLine(" 1 - Array");
                 Console.WriteLine(" 2 - List");
+                Console.WriteLine(" 3 - Dictionary");
                 Console.WriteLine("99 - Exit");
                 Console.WriteLine("Seleccione una opción : ");
                 opt = Console.ReadLine();
@@ -29,6 +30,9 @@ namespace Net5.Fundamentals.ListAndThread
                         break;
                     case "2":
                         listAndThread.ListSample();
+                        break;
+                    case "3":
+                        listAndThread.DictionarySample();
                         break;
                     case "99":
                         exit = true;
