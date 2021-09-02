@@ -19,6 +19,7 @@ namespace Net5.Fundamentals.ListAndThread
                 Console.WriteLine(" 2 - List");
                 Console.WriteLine(" 3 - Dictionary");
                 Console.WriteLine(" 4 - SorteList");
+                Console.WriteLine(" 5 - HashTable");
                 Console.WriteLine("99 - Exit");
                 Console.WriteLine("Seleccione una opción : ");
                 opt = Console.ReadLine();
@@ -37,6 +38,9 @@ namespace Net5.Fundamentals.ListAndThread
                         break;
                     case "4":
                         listAndThread.SortedListSample();
+                        break;
+                    case "5":
+                        listAndThread.HashTableSample();
                         break;
                     case "99":
                         exit = true;
