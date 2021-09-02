@@ -137,6 +137,26 @@ namespace Net5.Fundamentals.ListAndThread
 
             Console.WriteLine($"Azucena : {people.Where(kvp => kvp.Value.Name == "Azucena").Select(s => s.Key).First()} ");
             Console.WriteLine($"Key : 56428632, value {people["56428632"].Name}");
+
+            people.Select(people => people.Key).ToList().ForEach(k => Console.WriteLine($"Key : {k}"));
+        }
+
+        public void SortedListSample()
+        {
+            Console.WriteLine("SortedList");
+            Console.WriteLine("==========");
+
+            SortedList<string, Person> people = new SortedList<string, Person>();
+
+            people.Add("12345678", new Person { DNI = "12345678", Name = "Erick", Age = 38, Sex = "M" });
+            people.Add("56428632", new Person { DNI = "56428632", Name = "Jorge", Age = 30, Sex = "M" });
+            people.Add("41635163", new Person { DNI = "41635163", Name = "Azucena", Age = 22, Sex = "F" });
+            people.Add("88382238", new Person { DNI = "88382238", Name = "Jeniffer", Age = 21, Sex = "F" });
+
+            Console.WriteLine($"Azucena : {people.Where(kvp => kvp.Value.Name == "Azucena").Select(s => s.Key).First()} ");
+            Console.WriteLine($"Key : 56428632, value {people["56428632"].Name}");
+
+            people.Select(people => people.Key).ToList().ForEach(k => Console.WriteLine($"Key : {k}"));
         }
     }
 }
