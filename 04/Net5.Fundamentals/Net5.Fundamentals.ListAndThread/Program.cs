@@ -22,6 +22,12 @@ namespace Net5.Fundamentals.ListAndThread
                 Console.WriteLine(" 5 - HashTable");
                 Console.WriteLine(" 6 - Stack");
                 Console.WriteLine(" 7 - Queue");
+                Console.WriteLine(" 8 - Tuple");
+                Console.WriteLine(" 9 - ValueTuple");
+                Console.WriteLine("10 - Thread");
+                Console.WriteLine("11 - Task");
+                Console.WriteLine("12 - StreamReader");
+                Console.WriteLine("13 - StreamWriter");
                 Console.WriteLine("99 - Exit");
                 Console.WriteLine("Seleccione una opción : ");
                 opt = Console.ReadLine();
@@ -49,6 +55,24 @@ namespace Net5.Fundamentals.ListAndThread
                         break;
                     case "7":
                         listAndThread.QueueSample();
+                        break;
+                    case "8":
+                        listAndThread.TupleSample();
+                        break;
+                    case "9":
+                        listAndThread.ValueTupleSample();
+                        break;
+                    case "10":
+                        listAndThread.ThreadSample();
+                        break;
+                    case "11":
+                        listAndThread.TaskSample();
+                        break;
+                    case "12":
+                        listAndThread.StreamReaderSample();
+                        break;
+                    case "13":
+                        listAndThread.StreamWriterSample();
                         break;
                     case "99":
                         exit = true;
