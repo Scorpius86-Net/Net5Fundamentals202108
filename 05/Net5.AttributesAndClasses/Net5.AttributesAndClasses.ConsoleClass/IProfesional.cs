@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Net5.AttributesAndClasses.ConsoleClass
 {
-    public class HumanDerivade: Human
+    public interface IProfesional
     {
-        public HumanDerivade()
-        {
-            //this.ADN =  ""; //se peude utilizar solo en el padre
-        }
+        void Work();
+        void Travel();
     }
 }

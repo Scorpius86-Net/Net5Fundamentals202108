@@ -17,6 +17,8 @@ namespace Net5.AttributesAndClasses.ConsoleClass
 
             ProcessPerson processPerson = new ProcessPerson();
             IPerson person = new Person() { Name = "Erick" };
+            IProfesional profesional = new Person();
+            
             processPerson.ProcessNameByReference(person);
             Console.WriteLine(person.Name);
 
@@ -28,14 +30,16 @@ namespace Net5.AttributesAndClasses.ConsoleClass
             RunDelegate(new MyDelegate(processPerson.MyMethodTwo), 33);
 
             Human human = new Human();
-            HumanDerivade humanDerivade = new HumanDerivade();
+            HumanDerivade humanDerivade = new HumanDerivade();            
 
             humanDerivade.Run(); // Solo se expone los miembros publicos
 
             //IPerson
             human.Run();
             person.Run();
-
+            person.Eat("Anticucho","Tallarines rojos");
+            person.Walk("12");
+            
             //IPerson p = new IPerson(); Las interfaces solo reciben implementacions
 
             int a = 5;
@@ -85,7 +89,8 @@ namespace Net5.AttributesAndClasses.ConsoleClass
             productRunnerService.Run();
 
             CustomerRunnerService customerRunnerService = new CustomerRunnerService();
-            customerRunnerService.Run();        }
+            customerRunnerService.Run();        
+        }
 
         static public void RunDelegate(MyDelegate myDelegate, int i)
         {

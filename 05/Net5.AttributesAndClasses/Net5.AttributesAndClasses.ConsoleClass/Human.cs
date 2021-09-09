@@ -11,7 +11,28 @@ namespace Net5.AttributesAndClasses.ConsoleClass
     {
         public Address Address { get ; set; }
         public string Name { get ; set ; }
-        private string ADN { get; set; }
+
+        public void Eat(string entrada, string fondo, string postre)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Eat(string entrada, string fondo)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Eat(string entrada)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Eat()
+        {
+            throw new NotImplementedException();
+        }
+
+        //private string ADN { get; set; }
 
         public void Run()
         {
@@ -27,6 +48,11 @@ namespace Net5.AttributesAndClasses.ConsoleClass
         public void Run(string s)
         {
             Console.WriteLine("Running Humman s : {s}");
+        }
+
+        public void Walk(string p1 = "test", int p2 = 0)
+        {
+            throw new NotImplementedException();
         }
     }
 }
