@@ -31,4 +31,14 @@ VALUES
 ('CUS00005','Raul Chato Padilla','Av las Orquideas S/N','L045','M',53213213,52345678901,5333333,5999999);
 
 
-SELECT * FROM Customer
+SELECT  
+	CustomerCode,
+	CustomerName,
+	CustomerAddress,
+	DistrictCode,
+	Sex,
+	DNI,
+	RUC,
+	Telephone,
+	Mobile
+FROM Customer
